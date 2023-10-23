@@ -1,0 +1,82 @@
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#openWindow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    user-select: none;
+    background-color: rgba(1, 0, 0, 0.5);
+}
+
+#preview {
+    position: absolute;
+    transform: scale(0.2);
+    z-index: -1;
+    right: 37%;
+}
+
+#preview1 {
+    position: absolute;
+    transform: scale(0.5);
+    z-index: -1;
+    right: 37%;
+}
+
+#faviconTop{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#openWindow.disappear {
+    animation: disappear 0.5s forwards;
+}
+
+#openWindow.appear {
+    animation: appear 2s forwards;
+}
+
+.no-transition {
+    transition: none;
+}
