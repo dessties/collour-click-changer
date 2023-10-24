@@ -18,49 +18,56 @@
     }
 }
 
-#openWindow {
+#bg {
+    height: 150px;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    position: relative;
+    background-color: rgb(25, 127, 127);
+    border: 10px solid white;
+    border-radius: 15%;
+}
+
+#openWindow {
+    display: flex;
     width: 100%;
     height: 100vh;
     user-select: none;
     background-color: rgba(1, 0, 0, 0.5);
-}
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
 
 #preview {
     position: absolute;
     transform: scale(0.2);
-    z-index: -1;
-    right: 37%;
+    right: -6%;
 }
 
-#preview1 {
+#faviconTop {
     position: absolute;
-    transform: scale(0.5);
-    z-index: -1;
-    right: 37%;
+    bottom: 0;
+    right: 0;
+    padding-right: 20px;
+    padding-bottom: 5px;
 }
 
-#faviconTop{
-    margin: 0;
-    padding: 0;
+#openWindowTittle {
+    position: absolute;
+    text-align: center;
+    right: 6%;
 }
-
-h1 {
-    margin: 0px;
-    padding: 0px;
-    justify-content: center;
-    align-items: center;
+h1{
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
-
-h2 {
-    justify-content: center;
-    align-items: center;
+h2{
+    padding-top: 0;
+    margin-top: 0;
 }
-
 body {
     cursor: pointer;
     margin: 0;
